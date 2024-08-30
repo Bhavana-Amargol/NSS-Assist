@@ -1,0 +1,51 @@
+1) create table adminlogin(username varchar(100),password varchar(100) );
+   insert into admin values('admin','admin');
+
+2) create table volunteerlogin(username varchar(100),password varchar(100) );
+   insert into volunteer values('volunteer','volunteer');
+
+3) create table unitleaderlogin(username varchar(100),password varchar(100) );
+   insert into unitleader values('unitleader','unitleader');
+
+4) create table deputylogin(username varchar(100),password varchar(100) ); .	
+   insert into deputy values('deputy','deputy');
+
+5) create table camp(camp_id varchar(100),camp_name varchar(100),camp_desc varchar(100),camp_startingdate varchar(100),camp_endingdate varchar(100),camp_duration varchar(100),camp_location varchar(100),camp_photos varchar(100));
+
+6) create table volunteercamp(vol_camp_id varchar(100),vol_camp_name varchar(100),vol_camp_desc varchar(100),vol_camp_startingdate varchar(100),vol_camp_endingdate varchar(100),vol_camp_duration varchar(100),vol_camp_location varchar(100),vol_camp_photos varchar(100));
+
+7) create table event(event_id varchar(100),event_name varchar(100),event_desc varchar(100),event_actualdate varchar(100),event_conducteddate varchar(100),event_time varchar(100),event_photos varchar(100));
+
+8) create table volunteerevent(vol_event_id varchar(100),vol_event_name varchar(100),e,vol_event_desc varchar(100),vol_event_actualdate varchar(100),vol_event_conducteddate varchar(100),vol_event_time varchar(100),vol_event_photos varchar(100));
+
+9) create table award(award_id varchar(100), volunteer_name varchar(100), course varchar(100), course_year varchar(100), batch varchar(100), award_name varchar(100), award_desc varchar(100), award_recived_year varchar(100), award_photo varchar(100));	
+
+10) create table certificate(certificate_id varchar(100), volunteer_id varchar(100), course_name varchar(100), course_year varchar(100), certificate_name varchar(100), certificate_desc varchar(100), certificaterecived_year varchar(100), certificate_photo varchar(100));	
+
+11) create table volunteerawards(award_id varchar(100), volunteer_id varchar(100), course_name varchar(100), course_year varchar(100), course_name varchar(100), award_desc varchar(100), awardrecived_year varchar(100),award_photo varchar(100));	
+
+12) create table volunteercertificate(certificate_id varchar(100), volunteer_id varchar(100),course_name varchar(100), course_year varchar(100),course_name varchar(100), award_desc varchar(100), awardrecived_year varchar(100), award_photo varchar(100));
+
+13) create table volunteer (v_id varchar (100), v_fname varchar (100), v_lname varchar (100), v_nationality varchar (100), v_dob varchar(100), v_category varchar(100),
+    v_fathers_fname varchar (100), v_fathers_lname varchar (100), v_mothers_fname varchar(100),  v_mothers_lname varchar (100), v_address varchar(100), v_landmark varchar(100),
+    v_state varchar(100), v_district varchar(100), v_taluk varchar(100), v_city varchar(100), v_pincode varchar(100), v_gender varchar(100), v_mobileno varchar(100),
+    v_emailid varchar(100), v_bloodgroup varchar(100), v_university varchar(100), v_program varchar(100), v_course varchar(100), v_courseyear varchar(100), v_collegeschool varchar(100),
+    v_batch varchar(100), v_accountno varchar(100), v_ifsc varchar(100), v_aadharno varchar(100), v_panno varchar(100), v_photo varchar(100), v_declarationform varchar(100));
+
+14) create table uniformapplied (uniform_id varchar (100), volunteer_fname varchar(100), volunteer_lname varchar(100), volunteer_course varchar(100), volunteer_courseyear varchar(100), volunteer_gender varchar(100) volunteer_size varchar(100));
+
+15) create table register (reg_id varchar (100), reg_fname varchar (100), reg_lname varchar (100), reg_nationality varchar (100), reg_dob varchar(100), reg_category varchar(100),
+    reg_fathers_fname varchar (100), reg_fathers_lname varchar (100), reg_mothers_fname varchar(100),  reg_mothers_lname varchar (100), reg_address varchar(100), reg_landmark varchar(100),
+    reg_state varchar(100), reg_district varchar(100), reg_taluk varchar(100), reg_city varchar(100), reg_pincode varchar(100), reg_gender varchar(100), reg_mobileno varchar(100),
+    reg_emailid varchar(100), reg_bloodgroup varchar(100), reg_university varchar(100), reg_program varchar(100), reg_course varchar(100), reg_courseyear varchar(100), reg_collegeschool varchar(100),
+    reg_batchyear varchar(100), reg_accountno varchar(100),reg_ifsc varchar(100), reg_aadharno varchar(100), reg_panno varchar(100), reg_photo varchar(100), reg_declarationform varchar(100));
+
+16) create table meeting (m_id varchar (100), m_date varchar (100), m_start_time varchar (100), m_end_time varchar (100), m_venue varchar (100), m_topics_covered varchar (100), m_refreshments varchar (100));
+
+17) create table feedbackform(event_name varchar(100),contact_date varchar(100), form_link varchar(100));
+   
+18) create table gform(form_id varchar(100), event_name varchar(100), conduct_date varchar(100), link varchar(100));
+ 
+19) create table mscloud(year varchar(100),  varchar(100), link varchar(100));
+
+20) create table report(report_id varchar(100), r_year varchar(100), r_file varchar(100));
